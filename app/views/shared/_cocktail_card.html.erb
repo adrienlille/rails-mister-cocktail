@@ -1,0 +1,8 @@
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo.url %>');">
+  <div class="card-category">Popular</div>
+  <div class="card-description">
+    <h2><%= cocktail.name %></h2>
+    <p><%= cocktail.ingredients.count %> ingredients needed</p>
+  </div>
+  <a class="card-link" href="<%= cocktail_path(cocktail) %>" ></a>
+</div>

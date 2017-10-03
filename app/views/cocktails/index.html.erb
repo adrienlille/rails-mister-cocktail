@@ -1,6 +1,8 @@
-<%= cl_image_tag("c26vto8mdcs3uqbdgu3d", width: 400, height: 300, crop: :fill) %>
 
-
-<% @cocktails.each do |cocktail| %>
-<%= cocktail.name %>[<%= link_to 'details', cocktail_path(cocktail) %>]<br>
-<%end%>
+<div class="row">
+  <% @cocktails.each do |cocktail| %>
+  <div class="col-xs-12 col-md-3">
+    <%= render "shared/cocktail_card", cocktail: cocktail %>
+  </div>
+  <%end%>
+</div>
